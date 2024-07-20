@@ -1,0 +1,29 @@
+.contact-container{
+    margin: 4rem 0;
+    position: relative;
+}
+
+.contact-container h5{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+}
+
+.contact-content{
+    display: flex;
+    gap: 3rem;
+}
+@media(max-width:426px){
+    .contact-content {
+        flex-direction: column; /* Change to row layout for larger screens */
+        justify-content: space-between;
+        align-items: center; /* Adjust spacing as needed */
+    }
+
+    .contact-content > div {
+        width: 48%; /* Adjust width for larger screens */
+        margin-bottom: 0; /* Remove bottom margin for row layout */
+        align-items: center;
+    }
+    
+}

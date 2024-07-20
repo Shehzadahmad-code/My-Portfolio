@@ -1,0 +1,276 @@
+.heading-container{
+    display: flex;
+    /* align-items: center; */
+    position: relative;
+}
+.heading-container::after,
+.heading-container::before{
+    content:'';
+    width: 28.125rem;
+    height: 28.125rem;
+    border-radius: 28.125rem;
+    background: #7c66e3;
+    position: absolute;
+    z-index:-1;
+    filter: blur(180px);
+    
+}
+.heading-container::after{
+    top: -3rem;
+    left: -5rem;
+}
+.heading-container::before{
+    bottom: 2rem;
+    right: 0rem;
+}
+.heading-content{
+    flex:1;
+    margin: 60px 0 10px 12px;
+}
+
+.heading-content h2{
+    font-size: 3.8rem;
+    font-weight: 600;
+    line-height: 5rem;
+    margin-bottom: 1rem; 
+
+}
+.heading-content p{
+    width: 80%;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 2rem;
+}
+.heading-content h3{
+    font-size: 2rem;
+    font-family: ui-monospace;
+    margin: 0;
+}
+.heading-img{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 2rem;
+    
+}
+.heading-img > div{
+    display:flex;
+    align-items: flex-end;
+    gap: 2rem;
+}
+.heading-img .mainpic img{
+    width: 15rem;
+    transition:all 0.3s ease;
+    border: 2px solid white;
+
+    /* border-top-left-radius: 80px;
+    border-top-right-radius: 80px; */
+    border-radius: 120px;
+    
+}
+.heading-img > div > img{
+    width: 20rem;
+    transition: all 0.3s ease;
+    border-color: 2px solid white;
+    border-radius: 82px;
+
+    
+}
+.icon{
+    width: 5rem;
+    height: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border-radius: 0.65rem;
+    border: 1.3px solid #eeedf5;
+}
+.icon img{
+    width: 4rem;
+    height: auto;
+    transition: all 0.3s ease;
+
+}
+.skills-card span {
+    font-size: 36px;
+    font-weight: 500;
+}
+.divicon{
+    padding-left: 4.8rem;
+}
+.heading-img > div > img:hover,
+.heading-img .mainpic img:hover,
+.icon img:hover{
+    transform: translateY(-0.4rem);
+}
+@media(max-width:1025px){
+  
+    .heading-content h2{
+        font-size: 2.7rem;
+        line-height: 2.7rem;
+    }
+    .heading-content p{
+        font-size: 0.9rem;
+        line-height: 1.6rem;
+    }
+    .heading-img > div > img{
+        width: 10rem;
+    }
+    .heading-img .mainpic img{
+        width:13rem;
+        height: auto;
+    }
+    .icon{
+        width: 3.5rem;
+        height: 3.5rem;
+    }
+    .icon img{
+        width: 2rem;
+    }
+}
+@media (min-width:1440px) {
+    .heading-content h2{
+        font-size: 5rem;
+        font-weight: 650;
+        line-height: 6rem;
+        margin-bottom: 1.5rem; 
+    
+    }
+    .heading-content p{
+        width: 83%;
+        font-size: 2rem;
+        font-weight: 450;
+        line-height: 3rem;
+    }
+    .heading-content h3{
+        font-size: 3rem;
+        font-family: ui-monospace;
+        margin: 0;
+    }
+
+    
+}
+@media(max-width:749px){
+    .heading-container{
+        flex-direction: column;
+        /* justify-content: center; */
+    }
+   .heading-img{
+    margin: 2rem 0 2rem 0;
+    display: flex;
+    flex-direction: column;
+   }
+   .heading-container h2{
+    margin-top:3rem ;
+   }
+   .heading-content h2,
+   .heading-content p{
+    width: auto;
+    text-align: center;
+   }
+   .heading-container::after,
+   .heading-container::before{
+    content:"";
+    width: 18rem;
+    height: 18rem;
+   }
+   .heading-container::after{
+    top: 0rem;
+    left: 0rem;
+   }
+   .heading-container::before{
+    bottom: 2rem;
+    right: 0rem;
+   }
+}
+@media( max-width:600px){
+    .heading-content h2{
+        font-size: 2.2rem;
+        line-height: 3rem;
+    }
+    .heading-content p{
+        font-size: 0.8rem;
+        line-height: 1.3rem;
+    }
+    .heading-img{
+        gap:1rem;
+    }
+    .heading-img > div > img{
+        width: 16rem;
+    }
+    .icon{
+        width: 3.3rem;
+        height: 3.3rem;
+    }
+    .icon img{
+        width:2rem;
+    }
+}
+@media(min-width:2560px){
+    .heading-content h2{
+        font-size: 4rem;
+        font-weight: 700;
+        line-height: 7rem;
+        margin-bottom: 1.5rem; 
+    }
+    .heading-content p{
+        
+        font-size: 42px;
+        font-weight: 200;
+        line-height: 4rem;
+    
+    }
+    .heading-content h3 {
+        font-size: 4rem;
+        font-family: ui-monospace;
+        margin: 0;
+    }
+    .icon{
+        width: 9rem;
+        height: 9rem;
+    }
+    .icon img{
+        width: 7rem;
+    }
+    .heading-img .mainpic img{
+        width: 30rem;
+    }
+    .divicon{
+        padding-left: 12rem;
+    }
+    .skills-card span {
+        font-size: 36px;
+        font-weight: 500;
+    }
+}
+
+
+
+
+/* .heading-img .icon {
+    position: relative;
+    gap: 1rem;
+    margin:1rem;
+    padding-right:2rem ;
+}
+.heading-img .icon img {
+    position: relative;
+    margin: .5rem;
+
+}
+.icon2{
+    display: flex;*/
+    /* align-items: flex-end; */
+    /* justify-content: center;
+    position: relative;
+    margin-left: 2rem;
+    
+   
+}
+.icon2 > img{
+    margin-left: 2rem;
+    
+} */ 
