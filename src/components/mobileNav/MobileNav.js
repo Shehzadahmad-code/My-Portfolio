@@ -1,29 +1,33 @@
 import React from 'react'
 import './MobileNav.css'
+// import { Link } from 'react-router-dom';
+import { HashLink as Link } from "react-router-hash-link";
 function MobileNav(props) {
+
     
   return (
     <>
-    <div className={`mobile-menu ${props.isOpen? 'active':''}`} onClick={props.toggleMenu} >
+    <div className={`mobile-menu ${props.isOpen? 'active':''}`} onClick={ props.openMenu} >
         <div className='mobile-menu-container'>
             <ul>
                 <li>
-                    <a href="/" className='menu-item'>Home</a>
+                    <Link to="/#home" className='menu-item' smooth onClick={props.toggleMenu}>Home</Link>
                 </li>
                 <li>
-                    <a href="/" className='menu-item'>Skills</a>
+                    <Link to="/#skill" className='menu-item' smooth onClick={props.toggleMenu}>Skills</Link>
                 </li>
                 <li>
-                    <a className='menu-item' href='/'>Work Experience</a>
+                    <Link className='menu-item' to='/#skill' smooth onClick={props.toggleMenu}>Work Experience</Link>
                 </li>
                 <li>
-                    <a className='menu-item' href='/'>Contact</a>
+                    <Link className='menu-item' to='/#contact' smooth onClick={props.toggleMenu}>Contact</Link>
                 </li>
+                </ul>
             
         <button className='nav-btn' onClick={()=>{}}>
            About me
         </button>
-            </ul>
+            
         </div>
         </div>
         

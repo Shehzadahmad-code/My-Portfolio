@@ -9,7 +9,7 @@ import cs from './css-3.png'
 export default function Heading() {
     return (
         <>
-            <section className='heading-container'>
+            <section className='heading-container' id='home'>
                 <div className='heading-content'>
                    <p><h2>Hi,</h2></p>
                    <h3> 
